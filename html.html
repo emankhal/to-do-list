@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="css/todolist.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
+    <title>TO-DO-LIST</title>
+</head>
+<body>
+    <div class="to-do-list">
+        <div class="container">
+            <div class="title">
+                <h1>TO-DO-LIST</h1>
+            </div>
+            <div class="list">
+
+            </div>
+            <div class="botton">
+                <button id="showFloatingElement"><i class="fa-solid fa-plus"></i></button>
+                
+            </div>
+        </div>       
+    </div>
+    <div  class="floatingElement"id="display" >
+        <label class="lable1" >what is to be done ?</label>
+        <input type="text" placeholder="enter task here" class="text">
+        <label class="lable2" >due date</label>
+        <input type="date" placeholder="date not set" class="date">
+        <button class="btn"><i class="fa-solid fa-check"></i></button>
+    </div>
+    <script src="list.js"></script>
+</body>
+</html>

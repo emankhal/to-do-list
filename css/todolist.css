@@ -1,0 +1,192 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family:  sans-serif;
+    margin: 0;
+    background-size: cover;
+    height: 100vh;
+    background-color: #f9f0f0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .to-do-list{
+    background-color: #ffdbdc;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #4b4343;
+    max-width: 50%;
+    left: 25%;
+    top: 50px;
+    height: 600px;
+    border-radius: 20px;
+  }
+  .to-do-list .container{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .title{
+    max-width: 80%;
+    position: relative;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .title h1{
+    border-bottom: 2px solid black;
+
+  }
+  .botton{
+    position: relative;
+    bottom: 25px;
+  }
+  .botton button{
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 0 10px #cdc9c9;
+  }
+.floatingElement {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 30%;
+    height: 50%;
+    background-color: #f9f0f0;
+    border-radius: 20px;
+    padding: 26px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  
+  }
+  #display{
+    display: none;
+    transition: .2s;
+
+  }
+  .floatingElement .lable1{
+    font-size: 20px;
+   
+  }
+  .floatingElement .text{
+    padding: 8px;
+    border-radius: 11px;
+
+    }
+.floatingElement .lable2{
+        font-size: 20px;
+    
+    }
+    .floatingElement .date{
+        padding: 8px;
+        border-radius: 11px;
+
+        }
+    .floatingElement button{
+      width: 26%;
+      height: 15%;
+        margin-left: 40%;
+        position: relative;
+        top: 17px;
+        border-radius: 15px;
+        border: none;
+        background-color:#ffdbdc ;
+                            
+    }
+    .list{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        height: 55px;
+        left: 0%;
+        top: -30%;
+        position: relative;
+        text-align: start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .list .list-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    background-color: white;
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+        .to-do-list{
+          max-width: 80%;
+          left: 61px;
+
+        }
+        .list .list-data{
+          
+            width: 319px
+        }
+        .floatingElement{
+            width: 65%;
+        }
+      }
+      @media (max-width: 992px) {
+        .to-do-list{
+          max-width: 80%;
+          left: 40px;
+          margin: 0px;
+  
+          }
+          .floatingElement{
+            width: 65%;
+        }
+        .list .list-data{
+          width: 100%;
+        }
+      }
